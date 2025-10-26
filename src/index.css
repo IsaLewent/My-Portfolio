@@ -36,6 +36,12 @@ html {
   color: white;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Kaydırma çubuğunu gizler */
 }
 
 .c-space {
@@ -59,7 +65,7 @@ html {
 }
 
 .subtext {
-  @apply text-neutral-400 text-sm md:text-base text-pretty text-balance;
+  @apply text-neutral-400 text-sm md:text-base  text-balance;
 }
 
 /* Navigation */
